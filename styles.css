@@ -6,25 +6,51 @@
   --creme: #FBEEC1; 
 }
 
+@font-face {
+  font-family: oswald;
+  src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
  /* border: 1px solid black !important; */
 }
-
+ /* Main Container */
 .container {
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 45px;
+  
 }
+
+/* Info section */
 
 .info {
   border: solid black 1px;
   height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 3fr 2fr 1fr;
+  font-family: Montserrat;
 }
+
+.info > .name {
+  align-self: center;
+  justify-self: center;
+  font-size: 60pt;
+  font-weight: 800;
+}
+
+.info > .bio {
+
+}
+
+/* Profile Picture */
 
 .profile-picture {
   border: 1px solid black;
