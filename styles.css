@@ -15,11 +15,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 45px;
 }
 
 .info {
-
+  border: solid black 1px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .profile-picture {
