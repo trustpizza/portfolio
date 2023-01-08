@@ -1,9 +1,14 @@
+
 :root {
   --green: #8D8741;
   --blue: #659DBD;
   --pink: #DAAD86;
   --brown: #BC986A;
   --creme: #FBEEC1; 
+}
+
+* {
+  border: 1px solid black !important;
 }
 
 header {
@@ -14,4 +19,9 @@ header {
   justify-content: space-between;
   align-items: center;
   color: white;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--blue);
 }
