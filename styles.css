@@ -27,5 +27,6 @@
   height: 500px;
   width: 500px;
   border-radius: 50%;
-  background-image: url();
+  background-image: url(images/axel.png);
+  background-position: top;
 }
