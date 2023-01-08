@@ -24,8 +24,8 @@
 
 .profile-picture {
   border: 1px solid black;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   border-radius: 50%;
   background-image: url(images/axel-2.JPG);
   background-position: left 48% bottom 50%;
