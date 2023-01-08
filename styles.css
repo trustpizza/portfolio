@@ -5,3 +5,13 @@
   --brown: #BC986A;
   --creme: #FBEEC1; 
 }
+
+header {
+  width: 100vw;
+  background-color: var(--blue);
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
