@@ -35,19 +35,33 @@
   border: solid black 1px;
   height: 600px;
   display: grid;
-  grid-template-rows: 3fr 2fr 1fr;
-  font-family: Montserrat;
+  grid-template-rows: 1fr 2fr 1fr;
+  font-family: Montserrat, oswald, 'Times New Roman', Times, serif;
 }
 
 .info > .name {
   align-self: center;
-  justify-self: center;
   font-size: 60pt;
   font-weight: 800;
-}
+  grid-row-start: 2;
+  }
 
 .info > .bio {
+  grid-row-start: 3;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: repeat(5,20%);
+}
 
+.bio > .message {
+  grid-area: 1 / 1 / 2 / 6 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio > .list {
+  
 }
 
 /* Profile Picture */
