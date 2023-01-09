@@ -59,8 +59,14 @@
 }
 
 .bio > .list {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+}
+
+.list > * {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Profile Picture */
