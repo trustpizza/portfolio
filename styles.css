@@ -49,19 +49,18 @@
 .info > .bio {
   grid-row-start: 3;
   display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: repeat(5,20%);
+  grid-template-rows: 1fr 1fr;
 }
 
 .bio > .message {
-  grid-area: 1 / 1 / 2 / 6 ;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bio > .list {
-  
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Profile Picture */
