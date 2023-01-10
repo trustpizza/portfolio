@@ -16,23 +16,26 @@
   src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-* {
- /* border: 1px solid black !important; */
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 30px;
 }
+
  /* Main Container */
 .container {
+  flex: 1;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 45px;
-  
+  padding-top: 45px;  
 }
 
 /* Info section */
 
 .info {
-  border: solid black 1px;
+  border: 1px solid black;
   height: 600px;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
@@ -40,13 +43,15 @@
 }
 
 .info > .name {
+  justify-self: center;
   align-self: center;
   font-size: 60pt;
   font-weight: 800;
   grid-row-start: 2;
-  }
+}
 
 .info > .bio {
+  font-size: 20pt;
   grid-row-start: 3;
   display: grid;
   grid-template-rows: 1fr 1fr;
