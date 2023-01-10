@@ -20,6 +20,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   background-color: var(--light-blue);
+  font-family: Montserrat, oswald, 'Times New Roman', Times, serif;
 }
 
  /* Main Container */
@@ -28,17 +29,16 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 45px;  
 }
 
 /* Info section */
 
 .info {
   height: 600px;
+  flex: 1;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   color: var(--black);
-  font-family: Montserrat, oswald, 'Times New Roman', Times, serif;
 }
 
 .info > .name {
@@ -96,6 +96,39 @@ body {
   border-radius: 50%;
   background-image: url(images/axel-2.JPG);
   background-position: left 48% bottom 50%;
+}
+
+/* Page Two */
+
+.vermont {
+  flex: 1;
+}
+
+.biography  {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 5px;
+  margin-left: 10px;
+  color: var(--black);
+}
+
+.biography .title {
+  font-size: 60pt;
+  align-self: center;
+  justify-self: center;
+}
+
+.biography .story {
+  font-size: 24pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  text-indent: .5in;
 }
 
 /* footer */
