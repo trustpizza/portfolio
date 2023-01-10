@@ -60,14 +60,15 @@
 
 .bio > .list {
  display: grid;
- grid-template-columns: repeat(4, 1fr);
+ grid-template-columns: repeat(3, 1fr);
 }
 
-.list > * {
+.list * {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: fit-content;
+  max-height: 75px;
+  max-width: auto;
 }
 
 /* Profile Picture */
