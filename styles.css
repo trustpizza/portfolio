@@ -36,7 +36,7 @@ body {
 .info {
   height: 600px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   color: var(--black);
   font-family: Montserrat, oswald, 'Times New Roman', Times, serif;
 }
