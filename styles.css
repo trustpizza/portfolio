@@ -59,16 +59,29 @@
 }
 
 .bio > .list {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
+ display: flex;
+ flex-wrap: wrap;
 }
 
-.list * {
+.list-group {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+ 
+/* These are the images listed in my experience */
+
+.list-group *  {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 75px;
+  height: 90px;
   max-width: auto;
+}
+
+.break  {
+  flex-basis: 100%;
+  height: 0;
 }
 
 /* Profile Picture */
