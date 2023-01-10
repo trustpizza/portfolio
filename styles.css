@@ -1,9 +1,8 @@
 :root {
-  --green: #8D8741;
-  --blue: #659DBD;
-  --pink: #DAAD86;
-  --brown: #BC986A;
-  --creme: #FBEEC1; 
+  --bright-blue: #00ABE4;
+  --white: #FFFFFF;
+  --light-blue: #E9F1FA;
+  --black: #1e375a;
 }
 
 @font-face {
@@ -20,6 +19,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 50px;
+  background-color: var(--light-blue);
 }
 
  /* Main Container */
@@ -35,10 +35,10 @@ body {
 /* Info section */
 
 .info {
-  border: 1px solid black;
   height: 600px;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  color: var(--black);
   font-family: Montserrat, oswald, 'Times New Roman', Times, serif;
 }
 
@@ -92,7 +92,6 @@ body {
 /* Profile Picture */
 
 .profile-picture {
-  border: 1px solid black;
   height: 600px;
   width: 600px;
   border-radius: 50%;
@@ -103,14 +102,17 @@ body {
 /* footer */
 
 footer {
-  background-color: #fff;
+  background-color: var(--bright-blue);
   box-shadow: 0px -5px 5px #FAF9F6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 footer .socials {
-  
+  grid-column-start: 3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 footer .button {
