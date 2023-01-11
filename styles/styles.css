@@ -25,6 +25,25 @@ body {
 
 /* Scroll Button */
 
+#scroll-btn {
+  position: absolute;
+  left: 50vw;
+  bottom: 60px;  
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  width: 50px;
+  color: var(--black);
+}
+
+#scroll-btn:hover {
+  color: var(--bright-blue);
+}
+
  /* Main Container */
 .container {
   flex: 1;
