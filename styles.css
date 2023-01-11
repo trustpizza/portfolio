@@ -24,7 +24,7 @@ body {
 }
 
  /* Main Container */
-.container, .second-page {
+.container {
   flex: 1;
   display: flex;
   justify-content: space-around;
@@ -104,32 +104,34 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 50% bottom 50%;
-}
-
-.biography  {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-  gap: 5px;
-  margin-left: 10px;
-  color: var(--black);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.biography .title {
-  font-size: 60pt;
-  align-self: center;
-  justify-self: center;
-}
-
-.biography .story {
-  font-size: 24pt;
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 30px;
   justify-content: center;
+  color: var(--black);
+  gap: 10px;
 }
 
-p {
-  text-indent: .5in;
+.title {
+  justify-self: center;
+  align-self: center;
+  font-size: 60pt;
+  font-weight: 800;
+  grid-row-start: 2;
+}
+
+.biography {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 18pt;
 }
 
 /* footer */
