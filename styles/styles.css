@@ -5,6 +5,10 @@
   --black: #1e375a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: oswald;
   src: url(fonts/Oswald-VariableFont_wght.ttf);
