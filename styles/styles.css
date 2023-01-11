@@ -197,13 +197,33 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 15vw);
+  gap: 15px;
 }
 
 .portfolio-grid * {
   border: 1px solid black;
 }
 
+#twitter {
+  grid-area: 1 / 1 / 3 / 1;
+}
 
+#chess {
+  grid-area: 3 / 1 / 3 / 2;
+}
+
+
+#facebook {
+  grid-area: 2 / 3 / 4 / 3;
+}
+
+#weather {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+#shopping {
+  grid-area: 2 / 2 / 4 / 2;
+}
 
 
 /* footer */
