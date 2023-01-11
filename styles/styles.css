@@ -174,22 +174,35 @@ body {
 /* Page 3 */
 
 #third-page {
-  max-height: 100vh;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
 }
 
 .portfolio-title {
-  padding: 10rem 0 5rem 0;
-
   font-size: 4rem;
-  text-align: center;
   color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-grid-container {
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-grid {
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 15vh);
+  grid-template-rows: repeat(3, 15vw);
 }
+
+.portfolio-grid * {
+  border: 1px solid black;
+}
+
 
 
 
