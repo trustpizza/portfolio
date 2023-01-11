@@ -29,10 +29,9 @@ body {
 
 /* Scroll Button */
 
-#scroll-btn {
+.scroll-btn {
   position: absolute;
   left: 50vw;
-  bottom: 60px;  
   background: none;
 	color: inherit;
 	border: none;
@@ -44,9 +43,21 @@ body {
   color: var(--black);
 }
 
-#scroll-btn:hover {
-  color: var(--bright-blue);
+#scroll-btn-1 {
+  bottom: 60px;  
 }
+
+#scroll-btn-2 {
+  bottom: calc(-100vh + 60px);
+  color: var(--white);
+}
+
+.scroll-btn:hover {
+  color: var(--bright-blue);
+  transform: scale(1.5);
+}
+
+
 
  /* Main Container */
 .container {
