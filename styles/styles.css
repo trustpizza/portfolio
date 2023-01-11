@@ -20,9 +20,9 @@ html {
 }
 
 body {
-  height: 200vh;
+  height: 300vh;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   background-color: var(--light-blue);
   font-family: Montserrat, oswald, 'Times New Roman', Times, serif;
 }
