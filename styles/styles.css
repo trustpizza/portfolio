@@ -284,11 +284,6 @@ footer > .socials {
 /* Media Queries for Small Devices */
 
 @media screen and (max-width: 1200px) {
-
-  body {
-    background-color: var(--light-blue);
-    font-family: Montserrat, oswald, 'Times New Roman', Times, serif;
-  }
   
   /* Scroll Button */
   
@@ -345,7 +340,56 @@ footer > .socials {
   /* Third Page */
   .portfolio-grid {
     width: 80%;
+  } 
+}
+
+@media screen and (max-width: 630px) {
+  .container {
+    justify-content: center;
+    max-width: 100vw;
+  }
+
+  #second-page {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #third-page {
+    max-width: 100vw;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  #twitter {
+    grid-area: 1 / 1 / 2 / 2;
   }
   
- 
+  #chess {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  
+  #facebook {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  #weather {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  
+  #shopping {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+    
+  .portfolio-grid {
+    width: 80%;
+    height: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  
+  .card {
+    height: 150px;
+  }
 }
