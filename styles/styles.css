@@ -19,6 +19,11 @@ html {
   src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: pacifico;
+  src: url(fonts/Pacifico-Regular.ttf);
+}
+
 body {
   height: 300vh;
   display: grid;
@@ -214,6 +219,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 42pt;
 }
 .card-bottom {
   height: 20px;
