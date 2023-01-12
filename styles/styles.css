@@ -11,17 +11,17 @@ html {
 
 @font-face {
   font-family: oswald;
-  src: url(fonts/Oswald-VariableFont_wght.ttf);
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: pacifico;
-  src: url(fonts/Pacifico-Regular.ttf);
+  src: url(../fonts/Pacifico-Regular.ttf);
 }
 
 body {
@@ -220,6 +220,8 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 42pt;
+  font-family: 'pacifico';
+  color: var(--black);
 }
 .card-bottom {
   height: 20px;
