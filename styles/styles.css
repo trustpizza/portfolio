@@ -369,6 +369,8 @@ footer > .socials {
   }
 
   #third-page {
+    height: 130vh;
+    max-height: 130vh;
     max-width: 100vw;
     grid-template-rows: repeat(6, 1fr);
   }
