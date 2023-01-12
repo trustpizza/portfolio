@@ -301,15 +301,21 @@ footer > .socials {
   /* Info section */
   
   .info {
-    height: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
   }
   
   .info > .name {
-    font-size: 40pt;
+    font-size: 30pt;
   }
   
   .info > .bio {
     font-size: 20pt;
+    display: flex;
+    flex-direction: column;
   }
      
   /* These are the images listed in my experience */
@@ -318,7 +324,7 @@ footer > .socials {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 40px;
     max-width: auto;
   }
   
@@ -387,8 +393,12 @@ footer > .socials {
     grid-area: 5 / 1 / 6 / 2;
   }
 
+  .portfolio-title {
+    font-size: 2em;
+  }
+
   .portfolio-grid {
-    width: 80%;
+    width: 60%;
     height: 150px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -396,5 +406,10 @@ footer > .socials {
   
   .card {
     max-height: 150px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
   }
 }
