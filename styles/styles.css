@@ -224,6 +224,12 @@ body {
   font-family: 'pacifico';
   color: var(--black);
 }
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 1px 1px #1e375a;
+}
+
 .card-bottom {
   height: 20px;
   background-color: var(--bright-blue);
