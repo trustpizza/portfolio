@@ -182,7 +182,7 @@ body {
   height: 100vh;
   max-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 5fr 75px;
 }
 
 .portfolio-title {
