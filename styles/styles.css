@@ -354,6 +354,7 @@ footer > .socials {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
   }
 
   #third-page {
@@ -381,7 +382,7 @@ footer > .socials {
   #shopping {
     grid-area: 5 / 1 / 6 / 2;
   }
-    
+
   .portfolio-grid {
     width: 80%;
     height: 150px;
