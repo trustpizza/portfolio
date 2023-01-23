@@ -238,7 +238,7 @@ nav {
 }
 
 
-#facebook {
+#TicTacToe {
   grid-area: 2 / 3 / 4 / 3;
 }
 
@@ -375,6 +375,11 @@ footer > .socials {
     grid-template-rows: repeat(6, 1fr);
   }
 
+  .card-main {
+    font-size: 36pt;
+    padding: 10px;
+  }
+
   #twitter {
     grid-area: 1 / 1 / 2 / 2;
   }
@@ -384,7 +389,7 @@ footer > .socials {
   }
   
   
-  #facebook {
+  #TicTacToe {
     grid-area: 3 / 1 / 4 / 2;
   }
   
