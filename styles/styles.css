@@ -242,7 +242,7 @@ nav {
   grid-area: 2 / 3 / 4 / 3;
 }
 
-#weather {
+#flight-finder {
   grid-area: 1 / 2 / 2 / 4;
 }
 
@@ -393,7 +393,7 @@ footer > .socials {
     grid-area: 3 / 1 / 4 / 2;
   }
   
-  #weather {
+  #flight-finder {
     grid-area: 4 / 1 / 5 / 2;
   }
   
