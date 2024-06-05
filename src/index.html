@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel Olsson</title>
+    <link rel="shortcut icon" href="<%= require('./photos/code-json.svg') %>" type="image/x-icon">
+    <script src="main.js" defer></script>
+</head>
+<body class="dark:bg-gray-900 dark:text-white h-screen flex flex-col md:flex-row">
+    <!-- Header and Mobile Menu Combined -->
+    <header class="bg-gray-600 text-white p-4 md:w-64 md:h-full flex flex-col md:flex-row">
+        <div class="flex justify-between items-center md:flex-col">
+            <h1 class="text-xl">Axel Olsson.</h1>
+
+            <button id="menu-button" class="flex flex-col justify-center items-center md:hidden" onclick="toggleMenu()">
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden p-2 md:block md:flex-grow">
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">Home</a>
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">About</a>
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">Projects</a>
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="flex-grow p-4">
+        <h2 class="text-2xl">Main Content</h2>
+        <p>This section grows and takes up the remaining space.</p>
+    </main>
+</body>
+</html>

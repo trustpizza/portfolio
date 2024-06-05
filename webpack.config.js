@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // Ensure this line is present
 
 module.exports = {
   entry: './src/index.js',
@@ -29,6 +30,10 @@ module.exports = {
       },
     ],
   },
-  mode: 'development'
-
-};
+  mode: 'development',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html', // Source template file
+    }), 
+  ]
+}; 

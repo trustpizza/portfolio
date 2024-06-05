@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bar {
+    @apply w-8 h-1 bg-white my-1 transition-all duration-300 ease-in-out;
+}
+.bar1-transformed {
+    transform: rotate(45deg) translate(3px, 3px);
+}
+.bar2-transformed {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+.hidden-bar {
+    opacity: 0;
+}
