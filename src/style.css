@@ -14,3 +14,7 @@
 .hidden-bar {
     opacity: 0;
 }
+
+.rectangle {
+    @apply absolute w-full h-full opacity-75;
+}

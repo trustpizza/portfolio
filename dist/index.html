@@ -10,9 +10,9 @@
 <script defer src="main.js"></script></head>
 <body class="dark:bg-gray-900 dark:text-white h-screen flex flex-col md:flex-row">
     <!-- Header and Mobile Menu Combined -->
-    <header class="bg-gray-600 text-white p-4 md:w-64 md:h-full flex flex-col md:flex-row">
+    <header class="bg-gray-600 text-white p-4 md:w-64 md:h-full flex flex-col">
         <div class="flex justify-between items-center md:flex-col">
-            <h1 class="text-xl">Axel Olsson.</h1>
+            <h1 class="w-full p-2 md:text-2xl font-bold text-xl">Axel Olsson.</h1>
 
             <button id="menu-button" class="flex flex-col justify-center items-center md:hidden" onclick="toggleMenu()">
                 <span id="bar1" class="bar"></span>
@@ -20,18 +20,44 @@
                 <span id="bar3" class="bar"></span>
             </button>
         </div>
-        <nav id="mobile-menu" class="hidden md:block md:flex-grow">
-            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">Home</a>
-            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">About</a>
-            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">Projects</a>
-            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md">Contact</a>
+        <nav id="mobile-menu" class="hidden p-2 md:block md:flex-grow">
+            <a href="#" class="block p-2 hover:bg-gray-700 active:bg-gray-700 rounded-md" onclick="navigate('home')">Home</a>
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md" onclick="navigate('about')">About Me</a>
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md" onclick="navigate('projects')">Projects</a>
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded-md" onclick="navigate('contact')">Contact</a>
         </nav>
     </header>
 
     <!-- Main Layout -->
-    <main class="flex-grow p-4">
-        <h2 class="text-2xl">Main Content</h2>
-        <p>This section grows and takes up the remaining space.</p>
+    <main class="flex-grow p-4 relative">
+        <div id="home" class="page">
+            <!-- Overlapping rectangles -->
+            <div class="rectangle bg-red-500 transform -rotate-6"></div>
+            <div class="rectangle bg-blue-500 transform rotate-6"></div>
+            <div class="rectangle bg-green-500"></div>
+
+            <!-- Content container -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                <div class="mb-4">
+                    <img src="path/to/your-image.jpg" alt="Axel Olsson" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                </div>
+                <h1 class="text-black text-4xl font-bold">Axel Olsson</h1>
+                <h2 class="text-white text-2xl mt-2">Full Stack Software Engineer</h2>
+            </div>
+        </div>
+        <div id="about" class="page hidden">
+            <h2 class="text-2xl">About Me Content</h2>
+            <p>This section grows and takes up the remaining space.</p>
+        </div>
+        <div id="projects" class="page hidden">
+            <h2 class="text-2xl">Projects Content</h2>
+            <p>This section grows and takes up the remaining space.</p>
+        </div>
+        <div id="contact" class="page hidden">
+            <h2 class="text-2xl">Contact Content</h2>
+            <p>This section grows and takes up the remaining space.</p>
+        </div>
+
     </main>
 </body>
 </html>
