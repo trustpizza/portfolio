@@ -5,6 +5,7 @@ const navigate = (pageId) =>  {
     })
 
     document.getElementById(pageId).classList.remove('hidden');
+    document.getElementById(pageId).classList.add('flex');
 }
 
 export default navigate;

@@ -15,6 +15,13 @@
     opacity: 0;
 }
 
-.rectangle {
-    @apply absolute w-full h-full opacity-75;
+@layer base {
+
+    @font-face {
+        font-family: 'sharpie';
+        src: url('./fonts/PermanentMarker-Regular.ttf') format('ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+      
 }
