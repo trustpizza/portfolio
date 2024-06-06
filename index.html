@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axel Olsson</title>
-    <link rel="shortcut icon" href="ed8f2188638ea83f5d6b.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="fonts/code-json.svg" type="image/x-icon">
     <script src="main.js" defer></script>
 <script defer src="main.js"></script></head>
-<body class="dark:bg-gray-900 dark:text-white h-screen flex flex-col md:flex-row">
+<body class="dark:bg-gray-900 dark:text-white h-screen flex flex-col md:flex-row max-h-full">
     <!-- Header and Mobile Menu Combined -->
-    <header class="bg-gray-600 text-white p-4 md:w-64 md:h-full flex flex-col">
+    <header class="bg-gray-600 text-white p-4 flex flex-col min-w-fit">
         <div class="flex justify-between items-center md:flex-col">
             <h1 class="w-full p-2 md:text-2xl font-bold text-xl">Axel Olsson.</h1>
 
@@ -29,35 +29,109 @@
     </header>
 
     <!-- Main Layout -->
-    <main class="flex-grow p-4 relative">
-        <div id="home" class="page">
-            <!-- Overlapping rectangles -->
-            <div class="rectangle bg-red-500 transform -rotate-6"></div>
-            <div class="rectangle bg-blue-500 transform rotate-6"></div>
-            <div class="rectangle bg-green-500"></div>
-
+    <main class="flex-grow p-4 relative md:max-h-full md:overflow-hidden">
+        <!-- Home "Page" -->
+        <div id="home" class="page hidden h-full flex justify-center">
             <!-- Content container -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+            <div class="flex flex-col items-center justify-center text-center p-4">
                 <div class="mb-4">
-                    <img src="path/to/your-image.jpg" alt="Axel Olsson" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                    <img src="e9ba350039fc8393ca56.jpeg" alt="Axel Olsson" class="w-60 h-60 md:h-96 md:w-96 object-cover border-4 border-black dark:border-white shadow-lg">
                 </div>
-                <h1 class="text-black text-4xl font-bold">Axel Olsson</h1>
-                <h2 class="text-white text-2xl mt-2">Full Stack Software Engineer</h2>
+                <h1 class="text-black dark:text-white text-4xl font-bold">Axel Olsson</h1>
+                <h2 class="text-black dark:text-white text-2xl mt-2">Full Time Software Engineer</h2>
+                <h3 class="text-black dark:text-white text-xl mt-2">- Part Time Hiker Trash -</h3>
             </div>
         </div>
-        <div id="about" class="page hidden">
-            <h2 class="text-2xl">About Me Content</h2>
-            <p>This section grows and takes up the remaining space.</p>
+        <!-- About "Page" -->
+        <div id="about" class="page hidden items-center justify-center flex h-full mx-8">
+            <div class="relative flex flex-col items-center justify-center text-center p-4 border-2 border-black dark:border-white md:w-8/12 md:h-8/12 m-y-4">
+                <h2 class="text-2xl font-bold mb-4">About Me</h2>
+                <p class="mb-8">
+                    I am a huge nerd for Mother Nature and am in love with discovering Her mysteries as I hike, bike, ski, swim, and whatever else through Her lands.
+                    My second love is problem solving, and what better tool to solve problems with
+                    than software?  I am entirely self taught (though I contend that Philosophy and CS are almost identical) and have worked professionally as a Software Engineer since 2022.
+                    I am trained in Python, Ruby (and Rails), Javascript, and C#.
+                    I have worked on machine learning models, written data science software, build autonomous robots for private companies, and have worked as a full stack web developer.
+                    Am I a Jack of All Trades? NO! Do you know how many trades there are (that would be crazy)!? 
+                    What I do bring is an ability and love for learning.  Give me a problem and it will (eventually) be solved.
+                </p>
+                <!-- Images on Larger Screens -->
+                <div class="hidden md:block md:absolute md:top-0 md:right-0 md:transform md:rotate-45 md:-translate-y-32 md:translate-x-32">
+                    <img class="md:transform md:rotate-3 w-48 h-48 object-cover border-4 border-white md:pb-2 shadow-md bg-white" src="fd125162e74a8e20131f.jpeg" alt="Grand Canyon">
+                </div>
+                <div class="hidden md:block md:absolute md:bottom-0 md:left-0 md:transform md:-rotate-45 md:translate-y-28 md:-translate-x-32">
+                    <img class="md:transform md:rotate-3 w-48 h-48 object-cover border-4 border-white md:pb-2 shadow-md bg-white" src="abc4836300bfd6ec5902.jpeg" alt="Skiing">
+                </div>
+                <!-- Carousel Container -->
+                <div id="carousel" class="carousel-container md:hidden overflow-x-auto overflow-y-hidden flex snap-x snap-mandatory w-full">
+                    <div class="flex flex-shrink-0 snap-center w-full">
+                        <img class="w-48 h-48 object-cover border-4 border-white shadow-md bg-white mx-auto" src="fd125162e74a8e20131f.jpeg" alt="Grand Canyon">
+                    </div>
+                    <div class="flex flex-shrink-0 snap-center w-full">
+                        <img class="w-48 h-48 object-cover border-4 border-white shadow-md bg-white mx-auto" src="abc4836300bfd6ec5902.jpeg" alt="Skiing">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="projects" class="page hidden">
-            <h2 class="text-2xl">Projects Content</h2>
-            <p>This section grows and takes up the remaining space.</p>
+        <!-- Projects "Page" -->
+        <div id="projects" class="page items-center justify-center flex h-full mx-8">
+            <div class="grid md:grid-rows-2 md:grid-cols-2 gap-4 flex-grow h-full">
+                <a href="https://briana-and-axels-travels.com/" target="_blank" class="project rounded-md border-2 border-black dark:border-white h-full w-full bg-gray-500 dark:bg-gray-600 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow duration-300">
+                    <!-- Project Name -->
+                    <h2 class="font-['sharpie'] text-white text-4xl font-bold text-center mb-6">Travel Blog</h2>
+                
+                    <!-- Language Images -->
+                    <div class="flex justify-center items-center space-x-4 p-4 dark:bg-gray-800 bg-gray-300 rounded-lg">
+                        <img class="w-12 h-12 object-contain" src="8c4fcb7b42812c41e81d.png" alt="Ruby">
+                        <img class="w-12 h-12 object-contain" src="e087754771abd3526937.png" alt="JavaScript">
+                        <img class="w-12 h-12 object-contain" src="f0f26047a8933b822dae.png" alt="TailwindCSS">
+                        <img class="w-12 h-12 object-contain" src="94972f53c025a8fb7e2b.png" alt="HTML">
+                        <!-- Add more images for other languages -->
+                    </div>
+                </a>
+                <a href="https://trustpizza.github.io/weather-app/" target="_blank" class="project border-2 border-black dark:border-white h-full w-full bg-gray-800 dark:bg-gray-600 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow duration-300">
+                    <!-- Project Name -->
+                    <h2 class="font-['sharpie'] text-white text-4xl font-bold text-center mb-6">Weather App</h2>
+                
+                    <!-- Language Images -->
+                    <div class="flex justify-center items-center space-x-4 p-4 bg-gray-800 rounded-lg">
+                        <img class="w-12 h-12 object-contain" src="e087754771abd3526937.png" alt="JavaScript">
+                        <img class="w-12 h-12 object-contain" src="f0f26047a8933b822dae.png" alt="TailwindCSS">
+                        <img class="w-12 h-12 object-contain" src="94972f53c025a8fb7e2b.png" alt="HTML">
+                        <!-- Add more images for other languages -->
+                    </div>
+                </a>
+                <a href="https://trustpizza.github.io/todo/" target="_blank" class="project border-2 border-black dark:border-white h-full w-full bg-gray-800 dark:bg-gray-600 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow duration-300">
+                    <!-- Project Name -->
+                    <h2 class="font-['sharpie'] text-white text-4xl font-bold text-center mb-6">Todo App</h2>
+                
+                    <!-- Language Images -->
+                    <div class="flex justify-center items-center space-x-4 p-4 bg-gray-800 rounded-lg">
+                        <img class="w-12 h-12 object-contain" src="e087754771abd3526937.png" alt="JavaScript">
+                        <img class="w-12 h-12 object-contain" src="f0f26047a8933b822dae.png" alt="TailwindCSS">
+                        <img class="w-12 h-12 object-contain" src="94972f53c025a8fb7e2b.png" alt="HTML">
+                        <!-- Add more images for other languages -->
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="project border-2 border-black dark:border-white h-full w-full bg-gray-800 dark:bg-gray-600 flex flex-col items-center justify-center text-white hover:shadow-lg transition-shadow duration-300">
+                    <!-- Project Name -->
+                    <h2 class="font-['sharpie'] text-white text-4xl font-bold text-center mb-6">Coming Soon</h2>
+                
+                    <!-- Language Images -->
+                    <div class="flex justify-center items-center space-x-4 p-4 bg-gray-800 rounded-lg">
+                        <img class="w-12 h-12 object-contain" src="d7a21d969a68b01c2b64.png" alt="JavaScript">
+                        <img class="w-12 h-12 object-contain" src="31e239da1305576e78c1.png" alt="TailwindCSS">
+                        <img class="w-12 h-12 object-contain" src="b9fae959eaeb5660dd06.png" alt="HTML">
+                        <!-- Add more images for other languages -->
+                    </div>
+                </a>
+            </div>
         </div>
+        <!-- Contact "Page" -->
         <div id="contact" class="page hidden">
             <h2 class="text-2xl">Contact Content</h2>
             <p>This section grows and takes up the remaining space.</p>
         </div>
-
     </main>
 </body>
 </html>
