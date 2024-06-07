@@ -12,265 +12,674 @@
     />
     <script src="main.js" defer></script>
   <script defer src="main.js"></script></head>
-<body>     
-  <!-- Button for Small Screens to view Stuff --> 
-  <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-    <span class="sr-only">Open sidebar</span>
-    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-    </svg>
-  </button>
+  <body>
+    <!-- Button for Small Screens to view Stuff -->
+    <button
+      data-drawer-target="logo-sidebar"
+      data-drawer-toggle="logo-sidebar"
+      aria-controls="logo-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-slate-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
+    </button>
 
-  <!-- Sidebar -->
-  <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-      <a href="#" onclick="navigate('home')" class="flex items-center ps-2.5 mb-5">
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">< Axel Olsson /></span>
-      </a>
-      <ul class="space-y-2 font-medium">
-        <li>
-          <a href="#" onclick="navigate('home')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-              <svg class="w-8 h-8 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <!-- Sidebar -->
+    <aside
+      id="logo-sidebar"
+      class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div
+        class="h-full px-3 py-4 overflow-y-auto bg-slate-50 dark:bg-slate-800"
+      >
+        <a
+          href="#"
+          onclick="navigate('home')"
+          class="flex items-center ps-2.5 mb-5"
+        >
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >< Axel Olsson /></span
+          >
+        </a>
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="#"
+              onclick="navigate('home')"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-slate-100 dark:hover:bg-slate-700 group"
+            >
+              <svg
+                class="w-8 h-8 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <title>home-outline</title>
-                <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22" />
+                <path
+                  d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22"
+                />
               </svg>
               <span class="ms-3">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" onclick="navigate('about')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-              <svg class="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
-                <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="navigate('about')"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-slate-100 dark:hover:bg-slate-700 group"
+            >
+              <svg
+                class="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+                />
               </svg>
               <span class="flex-1 ms-3 whitespace-nowrap">About Me</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" onclick="navigate('projects')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-              <svg class="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="navigate('projects')"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-slate-100 dark:hover:bg-slate-700 group"
+            >
+              <svg
+                class="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <title>briefcase-outline</title>
-                <path d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V8C2,7.45 2.2,7 2.58,6.59C2.95,6.2 3.42,6 4,6H8V4C8,3.42 8.2,2.95 8.58,2.58C8.95,2.2 9.42,2 10,2H14C14.58,2 15.05,2.2 15.42,2.58C15.8,2.95 16,3.42 16,4V6H20M4,8V19H20V8H4M14,6V4H10V6H14Z" />              </svg>
+                <path
+                  d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V8C2,7.45 2.2,7 2.58,6.59C2.95,6.2 3.42,6 4,6H8V4C8,3.42 8.2,2.95 8.58,2.58C8.95,2.2 9.42,2 10,2H14C14.58,2 15.05,2.2 15.42,2.58C15.8,2.95 16,3.42 16,4V6H20M4,8V19H20V8H4M14,6V4H10V6H14Z"
+                />
+              </svg>
               <span class="flex-1 ms-3 whitespace-nowrap">Projects</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" onclick="navigate('contact')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-              <svg  class="flex-shrink-0 w-7   h-7   text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="navigate('contact')"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-slate-100 dark:hover:bg-slate-700 group"
+            >
+              <svg
+                class="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
                 <title>email-outline</title>
-                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
+                <path
+                  d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
+                />
               </svg>
               <span class="flex-1 ms-3 whitespace-nowrap">Get in Touch</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </aside>
-
-  <!-- Sections -->
-  <div class="p-4 sm:ml-64">
-    <!-- Home Section -->
-    <div id="home" data-type="section" class="h-screen p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 flex items-center justify-center gap-4">
-      <div class="container mx-auto px-4 py-8 text-center">
-        <!-- Image Carousel -->
-        
-
-      <div id="indicators-carousel" class="relative w-full" data-carousel="static">
-        <!-- Carousel wrapper -->
-        <div class="relative h-72 overflow-hidden rounded-lg md:h-96">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-              <img src="fd125162e74a8e20131f.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="abc4836300bfd6ec5902.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="d4aa0e178e5ac49f01c9.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="0f0438636c38383adad5.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="cb72de812cad2c555833.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-        </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
-      </div> 
-      <!-- Text Elements -->
-      <h1 class="text-3xl font-bold text-gray-800 mb-2">Axel Olsson</h1>
-      <h2 class="text-xl font-semibold text-gray-600 mb-4">Full Time Software Engineer</h2>
-      <h3 class="text-lg text-gray-500">Part Time Hiker Trash</h3>
-    </div>
-    </div>
-    
-    <!-- Contact Me Section -->
-    <div id="contact" data-type="section" class="hidden h-screen p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 flex flex-col items-center justify-center gap-4">
-      <div class="w-full max-w-md mx-auto p-5 bg-white rounded-lg shadow-md">
-        <h2 class="text-3xl font-bold mb-5 text-center underline">Contact Me</h2>
-        <div class="flex items-center space-x-3 mb-4">
-          <img src="fonts/github.svg" alt="GitHub" class="w-8 h-8">
-          <a href="https://github.com/trustpizza/" target="_blank" class="text-lg text-blue-600 hover:underline">GitHub</a>
-        </div>
-        <div class="flex items-center space-x-3 mb-4">
-          <img src="fonts/linkedin.svg" alt="LinkedIn" class="w-8 h-8">
-          <a href="https://www.linkedin.com/in/axel-olsson-882a78227/" target="_blank" class="text-lg text-blue-600 hover:underline">LinkedIn</a>
-        </div>
-        <div class="flex items-center space-x-3 mb-4">
-          <img src="fonts/post.svg" alt="Blog" class="w-8 h-8">
-          <a href="https://briana-and-axels-travels.com/" target="_blank" class="text-lg text-blue-600 hover:underline">Travel Blog</a>
-        </div>
-        <div class="flex items-center space-x-3">
-          <img src="fonts/email-outline.svg" alt="Email" class="w-8 h-8">
-          <a href="mailto:youremail@example.com" target="_blank" class="text-lg text-blue-600 hover:underline">Email</a>
-        </div>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="w-full max-w-md mx-auto p-5 bg-white rounded-lg shadow-md text-center">
-        <a href="4f64e3d268a29c485046.pdf" download class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 inline-block">
-          Download Resume
-        </a>
-      </div>
-  </div>
+    </aside>
 
-    <!-- About Me Section -->
-    <div id="about" data-type="section" class="hidden p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 ">
-      <div class="grid grid-cols-1 gap-4">
-        <div class="flex justify-center">
-          <img class="rounded-full w-64 h-64 object-cover" src="efb74c6d8106f984447c.jpeg" alt="Profile Picture">
-        </div>
-        <div>
-          <h1 class="text-4xl font-bold mb-4 text-center">About Me</h1>
-          <p class="text-lg text-gray-700 mb-4">
-            I'm passionate about exploring nature's wonders through hiking, biking, skiing, and swimming.
-            I'm also deeply intrigued by problem-solving, especially through software development.
-            Self-taught and with professional experience since 2022, I specialize in Python, Ruby (including Rails), Javascript, and C#.
-            My work spans machine learning, data science, robotics, and full-stack web development.
-            While I'm not a Jack of All Trades, I thrive on learning and tackling challenges head-on.
-          </p>
-          
-          <div class="container flex flex-col items-center gap-2 mx-auto p-4">
-            <h2 class="text-2xl font-bold mb-2 text-center">Skills</h2>
-            <!-- Skills Images -->
-            <div class="flex flex-col gap-4 justify-center w-9/12">
-              <!-- Top row -->
-              <div class="flex gap-2 justify-center items-center w-full">
-                <div class="w-full md:w-1/3 mb-4 flex justify-center items-center">
-                  <img src="8c4fcb7b42812c41e81d.png" alt="Ruby" class="w-16 h-16">
-                </div>
-                <div class="w-full md:w-1/3 mb-4 flex justify-center items-center">
-                  <img src="d7a21d969a68b01c2b64.png" alt="Python" class="w-16 h-16">
-                </div>
-                <div class="w-full md:w-1/3 mb-4 flex justify-center items-center">
-                  <img src="31e239da1305576e78c1.png" alt="Arduino" class="w-16 h-16">
-                </div>
+    <!-- Sections -->
+    <div class="p-4 sm:ml-64">
+      <!-- Home Section -->
+      <div
+        id="home"
+        data-type="section"
+        class="h-screen p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 flex items-center justify-center gap-4"
+      >
+        <div class="container mx-auto px-4 py-8 text-center">
+          <!-- Image Carousel -->
+
+          <div
+            id="indicators-carousel"
+            class="relative w-full"
+            data-carousel="static"
+          >
+            <!-- Carousel wrapper -->
+            <div class="relative h-72 overflow-hidden rounded-lg md:h-96">
+              <!-- Item 1 -->
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item="active"
+              >
+                <img
+                  src="fd125162e74a8e20131f.jpeg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
               </div>
-              <!-- Bottom row -->
-              <div class="flex justify-center items-center w-full">
-                <div class="w-full md:w-1/2 mb-4 flex justify-center items-center">
-                  <img src="e087754771abd3526937.png" alt="Javascript" class="w-16 h-16">
-                </div>
-                <div class="w-full md:w-1/2 mb-4 flex justify-center items-center">
-                  <img src="b9fae959eaeb5660dd06.png" alt="Rails" class="w-16 h-16">
-                </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="abc4836300bfd6ec5902.jpeg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="d4aa0e178e5ac49f01c9.jpeg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="0f0438636c38383adad5.jpeg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="cb72de812cad2c555833.jpeg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
               </div>
             </div>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Download Resume
-          </button>
+            <!-- Slider indicators -->
+            <div
+              class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
+            >
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 4"
+                data-carousel-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 5"
+                data-carousel-slide-to="4"
+              ></button>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-slate-800/30 group-hover:bg-white/50 dark:group-hover:bg-slate-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"
+                  />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-slate-800/30 group-hover:bg-white/50 dark:group-hover:bg-slate-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+          <!-- Text Elements -->
+          <h1 class="text-3xl font-bold text-gray-800 mb-2">Axel Olsson</h1>
+          <h2 class="text-xl font-semibold text-gray-600 mb-4">
+            Full Time Software Engineer
+          </h2>
+          <h3 class="text-lg text-gray-500">Part Time Hiker Trash</h3>
         </div>
       </div>
-      </div>
-    </div>
 
-    <!-- Projects Sections -->
-    <div id="projects" data-type="section" class="hidden h-screen p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 flex flex-col gap-4">
-      <h1 class="text-center text-4xl font-semibold">Projects</h1>
-      <div class="w-full border-b-2 border-gray-200 border-dashed"></div>
-      <!-- 3x1 Grid -->
-      <div class="grid md:grid-cols-3 gap-4 mb-4">
-        <a href="https://trustpizza.github.io/weather-app/" target="_blank" class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
-          <div class="p-4 flex flex-col items-center justify-center text-center w-full h-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-            <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Weather App</h5>
-            <ul class="mt-2 flex w-full items-center justify-around">
-              <li class="flex items-center space-x-2"><img src="e087754771abd3526937.png" alt="Javascript" class="w-12 h-12"></li>
-              <li class="flex items-center space-x-2"><img src="94972f53c025a8fb7e2b.png" alt="HTML" class="w-12 h-12"></li>
-              <li class="flex items-center space-x-2"><img src="f0f26047a8933b822dae.png" alt="TailwindCSS" class="w-18 h-10"></li>
-            </ul>
+      <!-- Contact Me Section -->
+      <div
+        id="contact"
+        data-type="section"
+        class="hidden h-screen p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 flex flex-col items-center justify-center gap-4"
+      >
+        <div class="w-full max-w-md mx-auto p-5 bg-white rounded-lg shadow-md">
+          <h2 class="text-3xl font-bold mb-5 text-center underline">
+            Contact Me
+          </h2>
+          <div class="flex items-center space-x-3 mb-4">
+            <img
+              src="fonts/github.svg"
+              alt="GitHub"
+              class="w-8 h-8"
+            />
+            <a
+              href="https://github.com/trustpizza/"
+              target="_blank"
+              class="text-lg text-blue-600 hover:underline"
+              >GitHub</a
+            >
           </div>
-        </a>            
-        <a href="https://replit.com/@AxelOlsson7/Ruby-Final-Chess-Game" target="_blank" class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
-          <div class="p-4 flex flex-col items-center justify-center text-center w-full h-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-            <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Chess in Ruby</h5>
+          <div class="flex items-center space-x-3 mb-4">
+            <img
+              src="fonts/linkedin.svg"
+              alt="LinkedIn"
+              class="w-8 h-8"
+            />
+            <a
+              href="https://www.linkedin.com/in/axel-olsson-882a78227/"
+              target="_blank"
+              class="text-lg text-blue-600 hover:underline"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img
+              src="fonts/post.svg"
+              alt="Blog"
+              class="w-8 h-8"
+            />
+            <a
+              href="https://briana-and-axels-travels.com/"
+              target="_blank"
+              class="text-lg text-blue-600 hover:underline"
+              >Travel Blog</a
+            >
+          </div>
+          <div class="flex items-center space-x-3">
+            <img
+              src="fonts/email-outline.svg"
+              alt="Email"
+              class="w-8 h-8"
+            />
+            <a
+              href="mailto:youremail@example.com"
+              target="_blank"
+              class="text-lg text-blue-600 hover:underline"
+              >Email</a
+            >
+          </div>
+        </div>
+        <div
+          class="w-full max-w-md mx-auto p-5 bg-white rounded-lg shadow-md text-center"
+        >
+          <a
+            href="4f64e3d268a29c485046.pdf"
+            download
+            class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 inline-block"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <div
+        id="about"
+        data-type="section"
+        class="hidden p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700"
+      >
+        <div class="grid grid-cols-1 gap-4">
+          <div class="flex justify-center">
+            <img
+              class="rounded-full w-64 h-64 object-cover"
+              src="efb74c6d8106f984447c.jpeg"
+              alt="Profile Picture"
+            />
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold mb-4 text-center">About Me</h1>
+            <p class="text-lg text-gray-700 mb-4">
+              I'm passionate about exploring nature's wonders through hiking,
+              biking, skiing, and swimming. I'm also deeply intrigued by
+              problem-solving, especially through software development.
+              Self-taught and with professional experience since 2022, I
+              specialize in Python, Ruby (including Rails), Javascript, and C#.
+              My work spans machine learning, data science, robotics, and
+              full-stack web development. While I'm not a Jack of All Trades, I
+              thrive on learning and tackling challenges head-on.
+            </p>
+
+            <div class="container flex flex-col items-center gap-2 mx-auto p-4">
+              <h2 class="text-2xl font-bold mb-2 text-center">Skills</h2>
+              <!-- Skills Images -->
+              <div class="flex flex-col gap-4 justify-center w-9/12">
+                <!-- Top row -->
+                <div class="flex gap-2 justify-center items-center w-full">
+                  <div
+                    class="w-full md:w-1/3 mb-4 flex justify-center items-center"
+                  >
+                    <img
+                      src="8c4fcb7b42812c41e81d.png"
+                      alt="Ruby"
+                      class="w-16 h-16"
+                    />
+                  </div>
+                  <div
+                    class="w-full md:w-1/3 mb-4 flex justify-center items-center"
+                  >
+                    <img
+                      src="d7a21d969a68b01c2b64.png"
+                      alt="Python"
+                      class="w-16 h-16"
+                    />
+                  </div>
+                  <div
+                    class="w-full md:w-1/3 mb-4 flex justify-center items-center"
+                  >
+                    <img
+                      src="31e239da1305576e78c1.png"
+                      alt="Arduino"
+                      class="w-16 h-16"
+                    />
+                  </div>
+                </div>
+                <!-- Bottom row -->
+                <div class="flex justify-center items-center w-full">
+                  <div
+                    class="w-full md:w-1/2 mb-4 flex justify-center items-center"
+                  >
+                    <img
+                      src="e087754771abd3526937.png"
+                      alt="Javascript"
+                      class="w-16 h-16"
+                    />
+                  </div>
+                  <div
+                    class="w-full md:w-1/2 mb-4 flex justify-center items-center"
+                  >
+                    <img
+                      src="b9fae959eaeb5660dd06.png"
+                      alt="Rails"
+                      class="w-16 h-16"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Download Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Sections -->
+      <div
+        id="projects"
+        data-type="section"
+        class="hidden h-screen p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 flex flex-col gap-4"
+      >
+        <h1 class="text-center text-4xl font-semibold">Projects</h1>
+        <div class="w-full border-b-2 border-gray-200 border-dashed"></div>
+        <!-- 3x1 Grid -->
+        <div class="grid md:grid-cols-3 gap-4 mb-4">
+          <a
+            href="https://trustpizza.github.io/weather-app/"
+            target="_blank"
+            class="flex items-center justify-center rounded bg-slate-50 dark:bg-slate-800"
+          >
+            <div
+              class="p-4 flex flex-col items-center justify-center text-center w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-gray-700"
+            >
+              <h5
+                class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                Weather App
+              </h5>
+              <ul class="mt-2 flex w-full items-center justify-around">
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="e087754771abd3526937.png"
+                    alt="Javascript"
+                    class="w-12 h-12"
+                  />
+                </li>
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="94972f53c025a8fb7e2b.png"
+                    alt="HTML"
+                    class="w-12 h-12"
+                  />
+                </li>
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="f0f26047a8933b822dae.png"
+                    alt="TailwindCSS"
+                    class="w-18 h-10"
+                  />
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="https://replit.com/@AxelOlsson7/Ruby-Final-Chess-Game"
+            target="_blank"
+            class="flex items-center justify-center rounded bg-slate-50 dark:bg-slate-800"
+          >
+            <div
+              class="p-4 flex flex-col items-center justify-center text-center w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-gray-700"
+            >
+              <h5
+                class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                Chess in Ruby
+              </h5>
+              <ul class="mt-2 flex w-full items-center justify-around">
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="8c4fcb7b42812c41e81d.png"
+                    alt="Ruby"
+                    class="w-12 h-12"
+                  />
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="https://trustpizza.github.io/tic_tac_toe_js/"
+            target="_blank"
+            class="flex items-center justify-center rounded bg-slate-50 dark:bg-slate-800"
+          >
+            <div
+              class="p-4 flex flex-col items-center justify-center text-center w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-gray-700"
+            >
+              <h5
+                class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                Tic Tac Toe
+              </h5>
+              <ul class="mt-2 flex w-full items-center justify-around">
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="e087754771abd3526937.png"
+                    alt="Javascript"
+                    class="w-12 h-12"
+                  />
+                </li>
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="94972f53c025a8fb7e2b.png"
+                    alt="HTML"
+                    class="w-12 h-12"
+                  />
+                </li>
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="58dfbebae4a02001b50e.png"
+                    alt="CSS"
+                    class="w-12 h-12"
+                  />
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <!-- Main Image -->
+        <a
+          href="https://briana-and-axels-travels.com/"
+          target="_blank"
+          class="flex flex-grow items-center justify-center md:h-48 mb-4 rounded bg-slate-50 dark:bg-slate-800"
+        >
+          <div
+            class="p-4 flex flex-col items-center justify-center text-center w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-gray-700"
+          >
+            <h5
+              class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white md:mb-4"
+            >
+              Rails Blog
+            </h5>
+            <span
+              class="hidden md:block text-lg text-gray-500 dark:text-gray-400 md:mb-4"
+              >Authentication, AWS S3 Integration, Docker/Remote
+              Deployment</span
+            >
             <ul class="mt-2 flex w-full items-center justify-around">
-              <li class="flex items-center space-x-2"><img src="8c4fcb7b42812c41e81d.png" alt="Ruby" class="w-12 h-12"></li>
+              <li class="flex items-center space-x-2">
+                <img
+                  src="8c4fcb7b42812c41e81d.png"
+                  alt="Ruby"
+                  class="w-12 h-12"
+                />
+              </li>
+              <li class="flex items-center space-x-2">
+                <img
+                  src="e087754771abd3526937.png"
+                  alt="Javascript"
+                  class="w-12 h-12"
+                />
+              </li>
+              <li class="flex items-center space-x-2">
+                <img
+                  src="b9fae959eaeb5660dd06.png"
+                  alt="Rails"
+                  class="w-12 h-12"
+                />
+              </li>
+              <li class="flex items-center space-x-2">
+                <img
+                  src="f0f26047a8933b822dae.png"
+                  alt="Rails"
+                  class="w-18 h-10"
+                />
+              </li>
             </ul>
           </div>
         </a>
-        <a href="https://trustpizza.github.io/tic_tac_toe_js/" target="_blank" class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
-          <div class="p-4 flex flex-col items-center justify-center text-center w-full h-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-            <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Tic Tac Toe</h5>
-            <ul class="mt-2 flex w-full items-center justify-around">
-              <li class="flex items-center space-x-2"><img src="e087754771abd3526937.png" alt="Javascript" class="w-12 h-12"></li>
-              <li class="flex items-center space-x-2"><img src="94972f53c025a8fb7e2b.png" alt="HTML" class="w-12 h-12"></li>
-              <li class="flex items-center space-x-2"><img src="58dfbebae4a02001b50e.png" alt="CSS" class="w-12 h-12"></li>
-            </ul>
-          </div>
-        </a>                
-      </div>
-      <!-- Main Image -->
-      <a href="https://briana-and-axels-travels.com/" target="_blank" class="flex flex-grow items-center justify-center md:h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-        <div class="p-4 flex flex-col items-center justify-center text-center w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-          <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white md:mb-4">Rails Blog</h5>
-          <span class="hidden md:block text-lg text-gray-500 dark:text-gray-400 md:mb-4">Authentication, AWS S3 Integration, Docker/Remote Deployment</span>
-          <ul class="mt-2 flex w-full items-center justify-around">
-            <li class="flex items-center space-x-2"><img src="8c4fcb7b42812c41e81d.png" alt="Ruby" class="w-12 h-12"></li>
-            <li class="flex items-center space-x-2"><img src="e087754771abd3526937.png" alt="Javascript" class="w-12 h-12"></li>
-            <li class="flex items-center space-x-2"><img src="b9fae959eaeb5660dd06.png" alt="Rails" class="w-12 h-12"></li>
-            <li class="flex items-center space-x-2"><img src="f0f26047a8933b822dae.png" alt="Rails" class="w-18 h-10"></li>
-          </ul>
-        </div>
-      </a>
-      <!-- Card 2x2 Grid -->
-      <div class="grid md:grid-cols-2 gap-4 mb-4">
-        <a href="https://github.com/trustpizza/water-quality-robot" target="_blank" class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
-          <div class="p-4 flex flex-col items-center justify-center text-center w-full h-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-            <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Water Quality Robot</h5>
-            <ul class="mt-2 flex w-full items-center justify-around">
-              <li class="flex items-center space-x-2"><img src="31e239da1305576e78c1.png" alt="Arduino C" class="w-12 h-12"></li>
-              <li class="flex items-center space-x-2"><img src="d7a21d969a68b01c2b64.png" alt="Python" class="w-12 h-12"></li>
-            </ul>
-          </div>
-        </a>       
-        <a href="#" class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
-          <div class="p-4 flex flex-col items-center justify-center text-center w-full h-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-            <!--
+        <!-- Card 2x2 Grid -->
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <a
+            href="https://github.com/trustpizza/water-quality-robot"
+            target="_blank"
+            class="flex items-center justify-center rounded bg-slate-50 dark:bg-slate-800"
+          >
+            <div
+              class="p-4 flex flex-col items-center justify-center text-center w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-gray-700"
+            >
+              <h5
+                class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                Water Quality Robot
+              </h5>
+              <ul class="mt-2 flex w-full items-center justify-around">
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="31e239da1305576e78c1.png"
+                    alt="Arduino C"
+                    class="w-12 h-12"
+                  />
+                </li>
+                <li class="flex items-center space-x-2">
+                  <img
+                    src="d7a21d969a68b01c2b64.png"
+                    alt="Python"
+                    class="w-12 h-12"
+                  />
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="flex items-center justify-center rounded bg-slate-50 dark:bg-slate-800"
+          >
+            <div
+              class="p-4 flex flex-col items-center justify-center text-center w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-800 dark:border-gray-700"
+            >
+              <!--
             <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Card Title</h5>
             <ul class="mt-2 flex w-full items-center justify-around">
               <li class="flex items-center space-x-2"><img src="8c4fcb7b42812c41e81d.png" alt="Ruby" class="w-12 h-12"></li>
@@ -278,16 +687,27 @@
               <li class="flex items-center space-x-2"><img src="b9fae959eaeb5660dd06.png" alt="Rails" class="w-12 h-12"></li>
             </ul>
           -->
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-              <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-              </svg>
-          </p>
-          </div>
-        </a>        
+              <p class="text-2xl text-gray-400 dark:text-gray-500">
+                <svg
+                  class="w-3.5 h-3.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 1v16M1 9h16"
+                  />
+                </svg>
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-
-  </div>
-</body>
+  </body>
 </html>
