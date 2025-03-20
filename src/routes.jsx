@@ -2,6 +2,7 @@ import AppLayout from "./AppLayout";
 import About from "./pages/About";
 import Error404 from "./pages/General/404";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 const routes = [
   {
@@ -16,6 +17,10 @@ const routes = [
       {
         path: "about",
         element: <About />
+      },
+      {
+        path: "projects",
+        element: <Projects />
       }
       // Add other child routes here if needed
     ],
