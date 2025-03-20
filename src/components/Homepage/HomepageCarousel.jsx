@@ -1,4 +1,4 @@
-import placeholder from '../assets/placeholder.jpg'; // Adjust the path as needed
+import placeholder from '../../assets/placeholder.jpg'; // Adjust the path as needed
 
 const Gallery = ({ images = [] }) => {
   const rotationPattern = [2, -2, 2, 2, -2]; // Rotation pattern

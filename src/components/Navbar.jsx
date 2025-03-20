@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ThemeToggleButton from './ThemeButton';
-import selfie from "../assets/selfie.png";
+import selfie from "../assets/pics/selfie.png";
 
 const Navbar = ({ theme, toggleTheme }) => {
   const items = [
@@ -10,7 +10,7 @@ const Navbar = ({ theme, toggleTheme }) => {
   ];
 
   return (
-    <header className='relative z-50 flex flex-none flex-col'> {/* Removed pointer-events-none */}
+    <header className='relative z-50 flex flex-none flex-col'>
       <div className='order-last mt-[calc(--spacing(16)-(--spacing(3)))]'></div>
 
       <div className='sm:px-8 top-0 order-last -mb-3 pt-3'>
@@ -20,7 +20,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               <div className='top-(--avatar-top,--spacing(3)) w-full'>
                 <div className="relative">
                   <Link to="/" className="block h-16 w-16 origin-left pointer-events-auto">
-                    <img src={selfie} className='rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16' />
+                    <img src={selfie} className='rounded-full bg-base-200 object-cover dark:bg-base-300 h-16 w-16' alt="selfie"/>
                   </Link>
                 </div>
               </div>
