@@ -19,7 +19,7 @@ const Gallery = ({ images = [] }) => {
 
           // Determine the class name based on the rotation value
           const rotationClass = rotationValue < 0 ? `-rotate-${Math.abs(rotationValue)}` : `rotate-${rotationValue}`;
-          console.log(rotationClass)
+
           return (
             <div
               key={index}
