@@ -1,7 +1,7 @@
 import placeholder from '../../assets/placeholder.jpg'; // Adjust the path as needed
 
 const Gallery = ({ images = [] }) => {
-  const rotationPattern = [2, -2, 2, 2, -2]; // Rotation pattern
+  const rotationPattern = [3, -3, 3, -3, 3]; // Rotation pattern
   const minImages = 10;
 
   // Pad the images array with placeholders if it's shorter than minImages
@@ -20,9 +20,9 @@ const Gallery = ({ images = [] }) => {
           return (
             <div
               key={index}
-              className={`m-4 carousel-item relative aspect-9/10 w-56 rounded-xl bg-base-200 rotate-${rotationValue}`}
+              className={`m-4 carousel-item relative aspect-9/10 w-56 rounded-xl bg-base-200`}
             >
-              <img src={image} alt={`Gallery Image ${index + 1}`} className="object-cover w-full h-full" />
+              <img src={image} alt={`Gallery Image ${index + 1}`} className={`rounded-md object-cover w-full h-full rotate-${rotationValue}`} />
             </div>
           );
         })}
