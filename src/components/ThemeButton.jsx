@@ -19,7 +19,7 @@ const ThemeToggleButton = ({ theme, toggleTheme }) => {
   };
 
   return (
-    <button className="btn mr-2" onClick={handleToggle}>
+    <button className="btn btn-soft mr-2" onClick={handleToggle}>
       <Icon path={currentIcon} size={1} />
     </button>
   );
