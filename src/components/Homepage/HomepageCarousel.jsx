@@ -20,7 +20,7 @@ const Gallery = ({ images = [] }) => {
           return (
             <div
               key={index}
-              className={`m-4 carousel-item relative aspect-9/10 w-32 rounded-xl bg-base-200 rotate-${rotationValue}`}
+              className={`m-4 carousel-item relative aspect-9/10 w-56 rounded-xl bg-base-200 rotate-${rotationValue}`}
             >
               <img src={image} alt={`Gallery Image ${index + 1}`} className="object-cover w-full h-full" />
             </div>

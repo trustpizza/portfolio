@@ -1,8 +1,9 @@
-import React from 'react';
 import Carousel from "../components/Homepage/HomepageCarousel";
 import WorkSection from '../components/Homepage/WorkExperiences';
 import epicLogo from "../assets/work/epic-logo.svg";
 import pvcLogo from "../assets/work/PVC-logo.png";
+// Dir for images
+import shuffledImages from "../components/Homepage/images";
 
 const Home = () => {
   const workExperiences = [
@@ -43,7 +44,7 @@ const Home = () => {
         </div>
         {/* Carousel Section */}
         <div className='flex items-center justify-center'>
-          <Carousel> </Carousel>
+          <Carousel images={shuffledImages}> </Carousel>
         </div>
         {/* Experiences Section */}
         <WorkSection workExperiences={workExperiences}> </WorkSection>

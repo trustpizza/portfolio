@@ -3,7 +3,6 @@ import About from "./pages/About";
 import Error404 from "./pages/General/404";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 
 const routes = [
   {
