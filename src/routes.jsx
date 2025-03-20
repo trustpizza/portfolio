@@ -3,15 +3,16 @@ import About from "./pages/About";
 import Error404 from "./pages/General/404";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const routes = [
   {
     path: "/",
-    element: <AppLayout />, // AppLayout as the parent element
+    element: <AppLayout />,
     errorElement: <Error404 />,
     children: [
       {
-        index: true, // Use index to render Home when the parent path is matched
+        index: true,
         element: <Home />,
       },
       {
@@ -21,8 +22,11 @@ const routes = [
       {
         path: "projects",
         element: <Projects />
+      },
+      {
+        path: "contact",
+        element: <Contact />
       }
-      // Add other child routes here if needed
     ],
   },
 ];

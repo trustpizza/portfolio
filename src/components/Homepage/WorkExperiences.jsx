@@ -1,7 +1,9 @@
 import Icon from '@mdi/react';
 import { mdiBriefcaseOutline } from '@mdi/js';
+import resumeFilePath from "../../assets/work/resume.pdf"
 
 const WorkSection = ({ workExperiences }) => {
+
   return (
     <div className="sm:px-8 mt-12 mb-24 md:mt-20">
       <div className="mx-auto w-full max-w-7xl lg:px-8">
@@ -42,6 +44,15 @@ const WorkSection = ({ workExperiences }) => {
                       </li>
                     ))}
                   </ol>
+                  <a
+                    href={resumeFilePath}
+                    download // This attribute triggers the download
+                    className="btn btn-sm btn-outline w-full mt-6 group"
+                  >
+                    <span className="flex items-center gap-2 justify-center">
+                      <span>Download my Resume</span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

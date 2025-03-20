@@ -4,9 +4,10 @@ import selfie from "../assets/pics/selfie.png";
 
 const Navbar = ({ theme, toggleTheme }) => {
   const items = [
+    { title: "Home", link: "/" },
     { title: "About", link: "/about" },
     { title: 'Projects', link: '/projects' },
-    { title: 'Contact', link: '/contact' }
+    // { title: 'Contact', link: '/contact' }
   ];
 
   return (
@@ -19,7 +20,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <div className='top-(--avatar-top,--spacing(3)) w-full'>
                 <div className="relative">
-                  <Link to="/" className="block h-16 w-16 origin-left pointer-events-auto">
+                  <Link to="/" className="sblock h-16 w-16 origin-left pointer-events-auto">
                     <img src={selfie} className='rounded-full bg-base-200 object-cover dark:bg-base-300 h-16 w-16' alt="selfie"/>
                   </Link>
                 </div>
@@ -48,7 +49,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                           {items.map((item, index) => (
                             <li key={index}>
-                              <Link to={item.link}>{item.title}</Link>
+                              <Link className='link link-primary' to={item.link}>{item.title}</Link>
                             </li>
                           ))}
                         </ul>
@@ -58,10 +59,11 @@ const Navbar = ({ theme, toggleTheme }) => {
                       <ul className="menu menu-horizontal px-1">
                         {items.map((item, index) => (
                           <li key={index}>
-                            <Link to={item.link}>{item.title}</Link>
+                            <Link className='hover:link hover:link-primary' to={item.link}>{item.title}</Link>
                           </li>
                         ))}
                       </ul>
+                      
                     </div>
                     <div className="navbar-end">
                       <ThemeToggleButton theme={theme} toggleTheme={toggleTheme}/>
