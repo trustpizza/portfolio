@@ -29,7 +29,7 @@ const Projects = () => {
     {
       title: "This Portfolio!",
       description: "A BEAUTIFUL! React app created with TailwindCSS and DaisyUI components to display a wonderful software developer's accolades.",
-      showCaseURL: "https://trustpizza.github.io/portfolio/",
+      showCaseURL: "https://axel-olsson-portfolio.netlify.app/",
       repoUrl: "https://github.com/trustpizza/portfolio",
       imgUrl: selfie
     },
