@@ -37,7 +37,7 @@ const About = () => {
                       Through High School, I was a leader at our Robotics team.  At the University of Vermont, I studied Philosophy, to explore pure logic as an analogue to the abstractions found in software langauges.  As a professional, I have taught myself various languages to differing levels of proficiency.  I am proficient in <strong> Python, Ruby / Rails, Javascript, and React</strong>.  I have work experiences with <strong>C++</strong> and <strong>C#</strong>.
                     </p>
                     <p>
-                      Today, I work remotely at Precision Valley Communications, a telecommunications company based in Springfield, VT.  I build fullstack web applications, internal B2B scripts, train ML models on telecom data, and create products to generate deliverables for stakeholders.  I have self-employed experience building autonomous data collection devices for water quality for a private land preserve in the Berkshires.  This includes both the hardware devices requisite for remote data collection and a frontend interface for viewing data trends.
+                      Today, I work remotely at Precision Valley Communications, a telecommunications company based in Springfield, VT.  I build fullstack web applications, internal B2B scripts, train ML models on telecom data, and create tools to generate company deliverables.  I have self-employed experience building autonomous data collection devices for water quality for a private land preserve in the Berkshires.  This includes both the hardware devices requisite for remote data collection and a frontend interface for viewing data trends.
                     </p>
                   </div>
                 </div>
