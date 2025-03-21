@@ -9,3 +9,10 @@
   prefix: ;
   logs: true;
 }
+
+.rotate-custom-5 {
+  @apply rotate-5;
+}
+.-rotate-custom-5 {
+  @apply -rotate-5;
+}
