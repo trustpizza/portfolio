@@ -1,8 +1,17 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
 
+
+
 const AppLayout = () => {
+  const linkItems = [
+    { title: "Home", link: "/" },
+    { title: "About", link: "/about" },
+    { title: 'Projects', link: '/projects' },
+  ];
+
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -10,7 +19,7 @@ const AppLayout = () => {
     const initialTheme = isDarkMode ? 'dark' : 'light';
     setTheme(initialTheme);
     document.documentElement.setAttribute('data-theme', initialTheme);
-  }, []); // Empty dependency array ensures this runs only once on mount
+  }, []);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
@@ -18,14 +27,13 @@ const AppLayout = () => {
   };
 
   return (
-    <div className='flex h-full bg-zinc-50 dark:bg-black'>
-      <div className='flex w-full'>
-        <div className='fixed inset-0 flex justify-center sm:px-8'>
-          <div className='relative flex w-full flex-col'>
-            <Navbar theme={theme} toggleTheme={toggleTheme} />
-            <Outlet />
-          </div>
+    <div className='bg-base min-h-screen flex flex-col items-center'>
+      <div className='relative flex flex-col w-full max-w-5xl'>
+        <Navbar theme={theme} toggleTheme={toggleTheme} linkItems={linkItems} />
+        <div className = "flex-grow">
+          <Outlet />
         </div>
+        <Footer linkItems={linkItems} />
       </div>
     </div>
   );

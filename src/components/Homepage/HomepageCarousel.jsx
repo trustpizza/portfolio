@@ -12,7 +12,7 @@ const Gallery = ({ images = [] }) => {
 
   return (
     <div className="mt-16 sm:mt-20 overflow-x-auto">
-      <div className="carousel carousel-center rounded-box max-w-screen-sm lg:max-w-screen-md">
+      <div className="carousel sm:carousel-center rounded-box max-w-screen-sm lg:max-w-screen-md">
         {paddedImages.map((image, index) => {
           // Calculate the rotation value using the rotation pattern
           const rotationValue = rotationPattern[index % rotationPattern.length];

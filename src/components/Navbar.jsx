@@ -2,13 +2,7 @@ import { Link } from 'react-router-dom';
 import ThemeToggleButton from './ThemeButton';
 import selfie from "../assets/pics/selfie.png";
 
-const Navbar = ({ theme, toggleTheme }) => {
-  const items = [
-    { title: "Home", link: "/" },
-    { title: "About", link: "/about" },
-    { title: 'Projects', link: '/projects' },
-    // { title: 'Contact', link: '/contact' }
-  ];
+const Navbar = ({ theme, toggleTheme, linkItems = [] }) => {
 
   return (
     <header className='relative z-50 flex flex-none flex-col'>
@@ -47,7 +41,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                           </svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                          {items.map((item, index) => (
+                          {linkItems.map((item, index) => (
                             <li key={index}>
                               <Link className='link link-primary' to={item.link}>{item.title}</Link>
                             </li>
@@ -57,7 +51,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                     </div>
                     <div className="navbar-center hidden lg:flex">
                       <ul className="menu menu-horizontal px-1">
-                        {items.map((item, index) => (
+                        {linkItems.map((item, index) => (
                           <li key={index}>
                             <Link className='hover:link hover:link-primary' to={item.link}>{item.title}</Link>
                           </li>
