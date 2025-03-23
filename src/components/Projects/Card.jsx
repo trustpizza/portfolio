@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   const mdiPath = isMdiIcon ? project.imgUrl.replace('mdi:', '') : null;
 
   return (
-    <div className="group relative flex flex-col items-start">
+    <div className="group relative flex flex-col h-full items-start">
       <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-base-100 ring-1 shadow-md ring-base-200 dark:bg-base-300 dark:ring-0">
         {project.imgUrl && (isMdiIcon ? (
           <Icon path={mdiPath} size={2} />
@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
       <p className="relative z-10 mt-2 text-sm text-base-content/70">
         {project.description}
       </p>
-      <p className="relative z-10 mt-6 flex items-center text-sm font-medium text-base-content/50 transition group-hover:text-primary">
+      <p className="relative z-10 mt-auto pt-6 flex items-center text-sm font-medium text-base-content/50 transition group-hover:text-primary">
         <Icon path={mdiLinkVariant} size={1} />
         {project.repoUrl ? (
           <a href={project.repoUrl} className="link link-primary" target="_blank">

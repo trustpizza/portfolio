@@ -60,7 +60,7 @@ const Projects = () => {
 
   return(
     <>
-    <main className="flex-auto overflow-y-scroll mb-12">
+    <main className="flex-auto mb-12">
       <div className="sm:px-8 mt-16 sm:mt-32">
         <div className="mx-auto w-full max-w-7xl lg:px-8">
           <div className="relative px-4 sm:px-8 lg:px-12">
