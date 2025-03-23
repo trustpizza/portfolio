@@ -17,7 +17,7 @@ const About = () => {
                       loading="lazy"
                       width="800"
                       height="800"
-                      className="aspect-square rotate-3 rounded-2xl bg-base-200 object-cover dark:bg-base-300"
+                      className="aspect-square -rotate-4 rounded-2xl bg-base-200 object-cover dark:bg-base-300"
                       src={selfie}
                     />
                   </div>
@@ -31,7 +31,7 @@ const About = () => {
                       I've been obsessed with tinkering with electronics my whole life.  As a child, I built robots and rockets chock full of arduinos to collect, analyze, and present data trends.
                     </p>
                     <p>
-                      I grew up spending half my time living in an off grid cabin without electricity, cell service, or running water.  I have a deep love for the outdoors and spend most of my time outside of tinkering breathing in all that is wild.  I am an avid hiker, fly fisherman, backpacker, skier, and all around outdoorsman.  I am particularly interested in how, paradoxically, using technology can protect our natural resources.
+                      I grew up spending half my time living in an off grid cabin without electricity, cell service, or running water.  I have a deep love for the outdoors and spend most of my time outside of tinkering breathing in all that is wild.  I am an avid hiker, fly fisherman, backpacker, skier, and all around outdoorsman.  I am particularly interested in how technology can protect our natural resources.
                     </p>
                     <p>
                       Through High School, I was a leader at our Robotics team.  At the University of Vermont, I studied Philosophy, to explore pure logic as an analogue to the abstractions found in software langauges.  As a professional, I have taught myself various languages to differing levels of proficiency.  I am proficient in <strong> Python, Ruby / Rails, Javascript, and React</strong>.  I have work experiences with <strong>C++</strong> and <strong>C#</strong>.

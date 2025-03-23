@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Error404 from "./pages/General/404";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import projects from "./helpers/projects";
 
 const routes = [
   {
@@ -20,7 +21,7 @@ const routes = [
       },
       {
         path: "projects",
-        element: <Projects />
+        element: <Projects projects={projects}/>
       },
       // {
       //   path: "contact",

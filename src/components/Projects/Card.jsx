@@ -1,6 +1,7 @@
 import Icon from '@mdi/react';
-import { mdiLinkVariant } from '@mdi/js';
+import { mdiLanguageRuby, mdiLinkVariant } from '@mdi/js';
 import { Link } from 'react-router-dom';
+import iconMapping from '../../helpers/iconMapping';
 
 const ProjectCard = ({ project }) => {
   const isMdiIcon = typeof project.imgUrl === 'string' && project.imgUrl.startsWith('mdi:');
@@ -28,18 +29,31 @@ const ProjectCard = ({ project }) => {
       <p className="relative z-10 mt-2 text-sm text-base-content/70">
         {project.description}
       </p>
-      <p className="relative z-10 mt-auto pt-6 flex items-center text-sm font-medium text-base-content/50 transition group-hover:text-primary">
-        <Icon path={mdiLinkVariant} size={1} />
-        {project.repoUrl ? (
-          <a href={project.repoUrl} className="link link-primary" target="_blank">
-            github.com
-          </a>
-        ) : project.showCaseURL ? (
-          <Link to={project.showCaseURL} className="link link-primary" target="_blank">
-            {project.showCaseURL.replace(/https?:\/\//, '')}
-          </Link>
-        ) : null}
-      </p>
+      <div className="relative w-full z-10 mt-auto pt-6 flex items-center justify-between text-sm font-medium text-base-content/50 transition group">
+        <p className='relative z-10 flex items-center justify-between text-sm font-medium text-base-content/50 transition group-hover:text-primary'>
+          <Icon path={mdiLinkVariant} size={1} />
+          {project.repoUrl ? (
+            <a href={project.repoUrl} className="link link-primary" target="_blank">
+              github.com
+            </a>
+          ) : project.showCaseURL ? (
+            <Link to={project.showCaseURL} className="link link-primary" target="_blank">
+              {project.showCaseURL.replace(/https?:\/\//, '')}
+            </Link>
+          ) : null}
+        </p>
+        <p className='flex-end flex'>
+          {project.languages.slice(0, 3).map((language, index) => {
+            const icon = iconMapping[language.toLowerCase()];
+            if (icon) {
+              return (
+                  icon
+              );
+            }
+            return language.toLowerCase();
+          })}
+        </p>
+      </div>
     </div>
   );
 };

@@ -32,7 +32,9 @@ const Home = () => {
               <div className="mx-auto max-w-2xl lg:max-w-5xl">
                 <div className="max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-base-content sm:text-5xl">
-                    Part Time Hiker Trash, Full Time Software Engineer
+                    Part Time Hiker Trash
+                    <br />
+                    Full Time Software Engineer
                   </h1>
                   <p className="mt-6 text-base text-base-content/80">
                     I’m Axel, a fullstack software engineer based in Boulder, CO and Rochester, VT. I’m a Software Engineer at Precision Valley Communications, where we develop software to help Telecommunications companies with mapping, drafting and design work.  I own and maintain a suite of software built in Python, Ruby/Rails, React with Postgres and NoSQL databases.
