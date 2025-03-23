@@ -24,12 +24,12 @@ const WorkSection = ({ workExperiences }) => {
                         </div>
                         <dl className="flex flex-auto flex-wrap gap-x-2">
                           <dt className="sr-only">Company</dt>
-                          <dd className="w-full flex-none text-sm font-medium text-base-content">
-                            {experience.companyName}
-                          </dd>
                           <dt className="sr-only">Role</dt>
-                          <dd className="text-xs text-base-content/70">
+                          <dd className="w-full flex-none text-sm font-medium text-base-content">
                             {experience.positionTitle}
+                          </dd>
+                          <dd className="text-xs text-base-content/70">
+                            {experience.companyName}
                           </dd>
                           <dt className="sr-only">Date</dt>
                           <dd
