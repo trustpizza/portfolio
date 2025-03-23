@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
         <p className='relative z-10 flex items-center justify-between text-sm font-medium text-base-content/50 transition group-hover:text-primary'>
           <Icon path={mdiLinkVariant} size={1} />
           {project.repoUrl ? (
-            <a href={project.repoUrl} className="link link-primary" target="_blank">
+            <a href={project.repoUrl} className="link link-secondary" target="_blank">
               github.com
             </a>
           ) : project.showCaseURL ? (

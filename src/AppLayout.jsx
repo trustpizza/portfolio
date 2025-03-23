@@ -3,7 +3,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
 
-
+const themeMapping = {
+  "light": "emerald",
+  "dark": "forest"
+};
 
 const AppLayout = () => {
   const linkItems = [
@@ -18,12 +21,15 @@ const AppLayout = () => {
     const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const initialTheme = isDarkMode ? 'dark' : 'light';
     setTheme(initialTheme);
-    document.documentElement.setAttribute('data-theme', initialTheme);
+    document.documentElement.setAttribute('data-theme', themeMapping[initialTheme]);
   }, []);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-    document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light');
+    setTheme((prevTheme) => {
+      const newTheme = prevTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', themeMapping[newTheme]);
+      return newTheme;
+    });
   };
 
   return (
